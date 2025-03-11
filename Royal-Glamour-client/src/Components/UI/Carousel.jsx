@@ -14,21 +14,21 @@ const Carousel = () => {
     }, []);
 
     return (
-        <div className="carousel w-full h-96 mt-5">
+        <div className="carousel w-full h-96 mt-1">
             {/* Slide 1 */}
             <div id="slide1" className={`carousel-item relative w-full h-full ${currentSlide === 1 ? 'block' : 'hidden'}`}>
                 <div
                     className="hero h-full"
                     style={{
-                        backgroundImage: "url(https://jitben.com.bd/public/uploads/all/aHgs06tMYDaypMhDxKPLQKdckWf3KLqsB6ekWLK8.jpg)",
+                        backgroundImage: "url(https://i.ibb.co.com/W48NcCH5/Screenshot-from-2025-03-11-07-57-59.png)",
                     }}>
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className="hero-content text-neutral-content text-center">
                         <div className="max-w-md">
-                            <h1 className="mb-3 text-3xl font-bold">Welcome to Slide 1</h1>
+                            {/* <h1 className="mb-3 text-3xl font-bold">Welcome to Slide 1</h1>
                             <p className="mb-4">
                                 Experience the beauty of nature with this amazing scenery. Slide through to explore more.
-                            </p>
+                            </p> */}
                             <button className="btn btn-primary">Learn More</button>
                         </div>
                     </div>
@@ -40,15 +40,15 @@ const Carousel = () => {
                 <div
                     className="hero h-full"
                     style={{
-                        backgroundImage: "url(https://rang-bd.com/wp-content/uploads/2024/03/RBL-SHR-00524-3.webp)",
+                        backgroundImage: "url(https://i.ibb.co.com/vvr6png5/Screenshot-from-2025-03-11-07-59-17.png)",
                     }}>
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className="hero-content text-neutral-content text-center">
                         <div className="max-w-md">
-                            <h1 className="mb-3 text-3xl font-bold">Explore Slide 2</h1>
+                            {/* <h1 className="mb-3 text-3xl font-bold">Explore Slide 2</h1>
                             <p className="mb-4">
                                 Discover the vibrant cityscapes and cultural richness. Take your adventure to the next level.
-                            </p>
+                            </p> */}
                             <button className="btn btn-primary">Explore More</button>
                         </div>
                     </div>
@@ -60,15 +60,15 @@ const Carousel = () => {
                 <div
                     className="hero h-full"
                     style={{
-                        backgroundImage: "url(https://cdn.kaykraft.com/wp-content/uploads/2024/11/SHAWL-CT-LDS-244-600x899.jpg)",
+                        backgroundImage: "url(https://i.ibb.co.com/v6MYYwzy/Screenshot-from-2025-03-11-07-59-42.png)",
                     }}>
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className="hero-content text-neutral-content text-center">
                         <div className="max-w-md">
-                            <h1 className="mb-3 text-3xl font-bold">Adventure Awaits on Slide 3</h1>
+                            {/* <h1 className="mb-3 text-3xl font-bold">Adventure Awaits on Slide 3</h1>
                             <p className="mb-4">
                                 Let your adventurous spirit soar with this thrilling experience. Your journey begins here.
-                            </p>
+                            </p> */}
                             <button className="btn btn-primary">Start Now</button>
                         </div>
                     </div>
@@ -80,15 +80,15 @@ const Carousel = () => {
                 <div
                     className="hero h-full"
                     style={{
-                        backgroundImage: "url(https://jitben.com.bd/public/uploads/all/X46M6wFwXBFUGr68OFNP2WkGiRXOjSpvy4Sb2Jn2.jpg)",
+                        backgroundImage: "url(https://i.ibb.co.com/v6MYYwzy/Screenshot-from-2025-03-11-07-59-42.png)",
                     }}>
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className="hero-content text-neutral-content text-center">
                         <div className="max-w-md">
-                            <h1 className="mb-3 text-3xl font-bold">Final Stop: Slide 4</h1>
+                            {/* <h1 className="mb-3 text-3xl font-bold">Final Stop: Slide 4</h1>
                             <p className="mb-4">
                                 Embrace tranquility with this breathtaking view. Make memories that last a lifetime.
-                            </p>
+                            </p> */}
                             <button className="btn btn-primary">Get Inspired</button>
                         </div>
                     </div>

@@ -3,25 +3,22 @@ import { Link } from "react-router-dom";
 
 const List = () => {
     return (
-      <>
-        
-
-          
-          <li className="group relative">
-            <Link to={"/love-box"}>Love Box</Link>
+      <> 
+          <li className="group relative text-white text-xl font-bold">
+            <Link to={"/love-box"}>Cosmetics</Link>
             <ul className="menu menu-compact absolute hidden group-hover:block w-96 mt-9 bg-base-100 rounded-box shadow-lg p-2 z-[50]">
               <li>
-                <Link to={"/love-box"}>Jamdani Love Book </Link>
+                <Link to={"/love-box"}> </Link>
               </li>
               <li>
-                <Link to={"/love-box"}>Kathan Love Box</Link>
+                <Link to={"/love-box"}></Link>
               </li>
             </ul>
           </li>
 
           
-          <li className="group relative">
-            <Link to={"/saree"}>Saree</Link>
+          <li className="group relative text-white text-xl font-bold">
+            <Link to={"/saree"}>jewelry</Link>
             <ul className="menu menu-compact absolute hidden group-hover:block w-96 mt-9 bg-base-100 rounded-box shadow-lg p-2 z-[50]">
               <li>
                 <Link to={"/saree"}>Jamdani</Link>
@@ -42,8 +39,8 @@ const List = () => {
           </li>
 
           
-          <li className="group relative">
-            <Link to={"/shawl"}>shawl</Link>
+          <li className="group relative text-white text-xl font-bold">
+            <Link to={"/shawl"}>offer product</Link>
             <ul className="menu menu-compact absolute hidden group-hover:block w-96 mt-9  bg-base-100 rounded-box shadow-lg p-2 z-[50]">
               <li>
                 <Link to={"/shawl"}>Products</Link>

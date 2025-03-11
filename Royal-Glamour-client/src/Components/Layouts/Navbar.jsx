@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../Hook/useAuth";
 import UserRole from "../../Hook/UserRole";
 import profile from "../../assets/Images/423862506_1886857071764399_4892783537603856345_n.jpg"
+import logo from "../../assets/Images/royal_glamour-removebg-preview.png"
 
 import Container from "../UI/Container";
 
@@ -20,7 +21,7 @@ const Navbar = () => {
   };
   return (
     <Container>
-    <div className="navbar bg-base-100 h-24 shadow-md relative z-20">
+    <div className="navbar bg-gray-950 h-28 shadow-md relative z-20">
       {/* Navbar Start */}
       <div className="navbar-start">
         {/* Mobile Dropdown */}
@@ -28,7 +29,7 @@ const Navbar = () => {
           <div
             tabIndex={0}
             role="button"
-            className="btn btn-ghost lg:hidden"
+            className="btn bg-gray-950 text-white lg:hidden"
             onClick={() => setIsDrawerOpen(!isDrawerOpen)}
           >
             <svg
@@ -49,7 +50,7 @@ const Navbar = () => {
           {isDrawerOpen && (
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[50] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-gray-950 rounded-box z-[50] mt-3 w-52 p-2 shadow"
             >
               <List></List>
             </ul>
@@ -57,8 +58,8 @@ const Navbar = () => {
         </div>
 
         {/* Logo */}
-        <Link to="/" className="btn btn-ghost text-xl md:text-2xl">
-          <p>RUPDHARA</p>
+        <Link to="/">
+          <img className="h-24 w-24" src={logo}></img>
         </Link>
       </div>
 
@@ -73,7 +74,7 @@ const Navbar = () => {
       <div className="navbar-end">
 
         <div className="dropdown dropdown-end mr-10">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+          <div tabIndex={0} role="button" className="btn bg-gray-950 text-white ">
             <div className="indicator">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +88,7 @@ const Navbar = () => {
                   strokeWidth="2"
                   d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
-              <span className="badge badge-sm indicator-item">8</span>
+              <span className="badge badge-sm bg-white text-green-700 indicator-item">8</span>
             </div>
           </div>
           <div
@@ -102,8 +103,10 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+
+
         {/* User Section */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 mr-6">
           {user ? (
             <div className="dropdown dropdown-end">
               <div
